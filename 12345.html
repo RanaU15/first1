@@ -1012,3 +1012,1017 @@ color: rgba(30, 58, 95, 1);
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Accurubber</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  overflow-x: hidden;
+}
+
+
+
+
+/* Make header fixed at the top */
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  width: 1300px;
+}
+
+.logo img {
+  width: 184.69564819335938px;
+  height: 54.446495056152344px;
+  top: 23px;
+  left: 80px;
+  margin-left: 50px;
+
+}
+
+.center ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.center ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 0;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s;
+  width: 425px;
+height: 32px;
+top: 34px;
+left: 507.5px;
+gap: 20px;
+
+}
+
+.center ul li a:hover {
+  border-bottom: 3px solid rgba(11, 70, 142, 1);
+}
+
+.center ul li a.active {
+  border-bottom: 3px solid rgba(11, 70, 142, 1);
+}
+.contact button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 154px;
+  height: 44px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: #FABD46;
+  border: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow:
+    0px 2px 4px rgba(11, 70, 142, 0.1),
+    0px 7px 7px rgba(11, 70, 142, 0.09),
+    0px 15px 9px rgba(11, 70, 142, 0.05),
+    0px 27px 11px rgba(11, 70, 142, 0.01),
+    0px 43px 12px rgba(11, 70, 142, 0);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.contact button::before {
+  content: '';
+  position: absolute;
+  bottom: -75px; /* start from below the button */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #0B468E;
+  border-radius: 50%;
+  z-index: 0;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out, bottom 0.5s ease-in-out;
+}
+
+.contact button:hover::before {
+  width: 200px;
+  height: 200px;
+  up: -30px; /* pushes the circle up so it fills button nicely */
+}
+
+.contact button span,
+.contact button img {
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .logo img {
+    width: 140px;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .center ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .center ul li a {
+    font-size: 14px;
+    padding: 4px 0;
+    width: auto;
+    height: auto;
+    border: none;
+  }
+
+  .contact {
+    margin-top: 10px;
+  }
+
+  .contact button {
+    width: 130px;
+    height: 38px;
+    font-size: 12px;
+  }
+}
+   
+
+    .outer-wrap {
+      padding: 40px;
+      color: #1a1a1a;
+  
+    }
+
+    .flex-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px;
+      justify-content: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .left-side, .right-side {
+      flex: 1 1 400px;
+    }
+
+    .label-tag {
+font-family: 'Lato','Arial',sans-serif;
+font-weight: 600;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0.4%;
+text-transform: uppercase;
+color: rgba(37, 53, 81, 1);
+
+
+
+    }
+
+    .main-heading {
+      margin-bottom: 10px;
+      font-family: 'Montserrat','Arial',sans-serif;
+font-weight: 700;
+font-size: 48px;
+line-height: 64px;
+letter-spacing: 0.1%;
+color: rgba(11, 70, 142, 1);
+
+    }
+
+    .info-text {
+    
+      margin: 20px 0;
+      font-family: 'Lato','Arial',sans-serif;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0.2%;
+color: rgba(30, 58, 95, 1);
+
+    }
+
+    .support-line {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+
+    .support-line .icon {
+      font-size: 20px;
+      margin-right: 10px;
+      margin-top: 3px;
+    }
+
+    .support-line .support-text h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #0056b3;
+      margin-bottom: 3px;
+      font-family: 'Lato','Arial',sans-serif;
+    }
+
+    .support-line .support-text p {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(37, 53, 81, 1);
+;
+    }
+
+.right-side {
+  border: 1px solid   rgba(242, 242, 242, 1);
+  padding: 24px;
+  border-radius: 10px;
+  font-family: 'Lato', sans-serif;
+  color: rgba(30, 58, 95, 1);
+}
+
+form .row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.form-item {
+  flex: 1;
+}
+
+.form-item label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-item input,
+.form-item select,
+.form-item textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.full-width label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.full-width textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #f9b233, #f7c14b);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(to right, #f7c14b, #f9b233);
+}
+
+.required {
+  color: red;
+}
+
+    /*faq*/
+.faq-section {
+  padding: 80px 20px;
+  font-family: 'Lato', 'Arial', sans-serif;
+ 
+
+}
+
+.faq-container {
+  max-width: 1245px;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.faq-left {
+  flex: 1;
+  max-width: 45%;
+}
+
+.faq-label {
+  font-size: 14px;
+  color: #444;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.faq-left h2 {
+  font-size: 32px;
+  color: #003087;
+  font-weight: 700;
+  margin-bottom: 260px; /* more space between h2 and note */
+  line-height: 1.3;
+}
+
+.faq-note {
+  font-size: 14px;
+  color: #444;
+  margin-top: 0; /* reset top margin */
+}
+
+.faq-note a {
+  color: #003087;
+  text-decoration: underline;
+}
+
+/* FAQ card container */
+.faq-card {
+  flex: 2;
+  border-radius: 8px;
+  padding: 30px;
+  width: 100%;
+}
+
+/* FAQ list wrapper */
+.faq-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Common FAQ block */
+.faq-box details {
+  border-bottom: 1px solid #e2e2e2;
+  padding: 0;
+  position: relative;
+}
+
+/* First block styling */
+.faq-box details:first-of-type {
+  background-color: rgba(246, 247, 249, 1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+/* Summary text */
+.faq-box summary {
+  font-weight: 600;
+  color: #003087;
+  cursor: pointer;
+  list-style: none;
+  font-size: 16px;
+  padding: 18px 30px 18px 40px;  /* Make consistent for all */
+  position: relative;
+  display: block;
+}
+
+/* All other summary tags match this padding */
+.faq-box details:not(:first-of-type) summary {
+  padding: 18px 30px 18px 40px; /* Same as first */
+}
+
+/* Arrow icon */
+.faq-box summary::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  background-image: url("img2/arrow-down-s-line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate icon on open */
+.faq-box details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+/* Answer text */
+.faq-answer {
+  margin: 0 30px 20px 40px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Remove last border */
+.faq-box details:last-child {
+  border-bottom: none;
+}
+
+/*10*/
+.get-started {
+background-color: rgba(251, 251, 251, 1);
+
+  padding: 50px 20px;
+}
+.get-started .content {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+background-color: rgba(255, 255, 255, 1);
+padding-left: 16px;
+
+}
+.get-started .left {
+  flex: 1;
+}
+.get-started .right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.get-started h5 {
+
+  margin-bottom: 10px;
+  font-family: 'Lato','Araial',sans-serif;
+font-weight: 600;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0.4%;
+text-transform: uppercase;
+color: rgba(37, 53, 81, 1);
+
+}
+.get-started h2 {
+  
+  margin-bottom: 15px;
+font-family: 'Montserrat','Arail',sans-serif;
+font-weight: 700;
+font-size: 48px;
+line-height: 100%;
+letter-spacing: 0.1%;
+color: rgba(11, 70, 142, 1);
+
+}
+.get-started p{
+font-family: 'Lato','Arial',sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0.2%;
+width: 556px;
+height: 56px;
+color: rgba(30, 58, 95, 1);
+
+}
+.get-started .email-box {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  width: 384px;
+  height: 48px;
+  padding-top: 8px;
+  padding-right: 6px;
+  padding-bottom: 8px;
+  padding-left: 6px;
+  border-radius: 8px;
+  border-width: 1px;
+  background-color: rgba(255, 255, 255, 1);
+  position: relative; /* Added for icon positioning */
+  
+}
+
+.get-started input[type="email"] {
+  padding: 10px 15px;
+  width: 250px;
+ 
+  border: 1px solid rgba(0, 0, 0, 0.06);
+
+  box-shadow: 0px 2px 1.5px 0.5px rgba(149, 160, 178, 0.16);
+
+  padding-left: 40px; /* space for icon */
+  border-radius: 10px;
+}
+
+.get-started .email-box > img {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+
+}
+
+.submit-btn-wrap {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+}
+
+.submit-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9b233;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 100%);
+  
+  box-shadow:
+    0px 2px 4px rgba(11, 70, 142, 0.1),
+    0px 7px 7px rgba(11, 70, 142, 0.09),
+    0px 15px 9px rgba(11, 70, 142, 0.05),
+    0px 27px 11px rgba(11, 70, 142, 0.01),
+    0px 43px 12px rgba(11, 70, 142, 0);
+}
+
+/* Hover background fill */
+.submit-btn::before {
+  content: '';
+  position: absolute;
+  bottom: -75px; /* Start from below the button */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #0B468E; /* Circle background color */
+  border-radius: 50%;
+  z-index: 0;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out, bottom 0.5s ease-in-out;
+}
+
+.submit-btn:hover::before {
+  width: 200px;
+  height: 200px;
+  up: -30px; /* Move up to cover the button */
+}
+
+
+/* Keep text above the hover background */
+.submit-btn span {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+/*11*/
+.site-footer {
+  font-family: 'Lato', 'Arial', sans-serif;
+  background: #fff;
+  padding: 40px 20px 20px;
+  color: #333;
+}
+
+/* Top Row: Logo + tagline + social */
+.footer-header {
+  max-width: 1245px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.footer-header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+.footer-tagline {
+  font-size: 14px;
+  color: #003087;
+}
+
+/* Social Icons Row */
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  position: relative;
+  width: 38px;
+  height: 38px;
+}
+
+.social-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.icon-hover {
+  opacity: 0;
+}
+
+.social-icon:hover .icon-default {
+  opacity: 0;
+}
+
+.social-icon:hover .icon-hover {
+  opacity: 1;
+}
+
+/* Main Footer Content */
+.footer-main {
+  max-width: 1245px;
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Links Section */
+.footer-links {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-links h4 {
+  color: #003087;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Contact List */
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.footer-contact img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+/* Bottom Copyright Row */
+.footer-bottom {
+  max-width: 1245px;
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-policy-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-policy-links a {
+  color: #555;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-policy-links a:hover {
+  text-decoration: underline;
+}
+
+
+  </style>
+</head>
+<body>
+  <section>
+        <header>
+        <div class="logo">
+            <img src="img2/d2b5acc76e5aa1711949cabe6d01ba84b4c8b32a.png" alt="Logo" />
+        </div>
+        <div class="center">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html" >Service</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+
+  <div class="contact">
+  <button>
+    <span>Contact Now</span>
+
+    <img src="img2/Vector.png" alt="">
+  </button>
+</div>
+        </header>
+    </section>
+<section>
+  <div class="outer-wrap">
+    <div class="flex-wrapper">
+      <!-- Left Side -->
+      <div class="left-side">
+        <div class="label-tag">CONTACT US</div>
+        <div class="main-heading">Get in Touch with<br>Accurubber</div>
+        <div class="info-text">
+          Have questions or need a quote? Our team is here to help—contact us today!
+        </div>
+
+        <div class="support-line">
+          <div class="icon">
+            <img src="img2/Time Circle.svg">
+          </div>
+          <div class="support-text">
+            <h4>Real-time support</h4>
+            <p>A short description goes in here</p>
+          </div>
+        </div>
+
+        <div class="support-line">
+          <div class="icon">
+             <img src="img2/Call.svg">
+          </div>
+          <div class="support-text">
+            <h4>24/7 call center</h4>
+            <p>A short description goes in here</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="right-side">
+        <form>
+          <div class="row">
+            <div class="form-item">
+              <label>First Name <span class="required">*</span></label>
+              <input type="text" value="Eleanor" required>
+            </div>
+            <div class="form-item">
+              <label>Last Name <span class="required">*</span></label>
+              <input type="text" value="Pena" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-item">
+              <label>Email Address <span class="required">*</span></label>
+              <input type="email" value="eleanor@polka.io" required>
+            </div>
+            <div class="form-item">
+              <label>Issues <span class="required">*</span></label>
+              <select required>
+                <option>Select issues</option>
+                <option>Quote Request</option>
+                <option>Technical Support</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="full-width">
+            <label>How can we help? <span class="required">*</span></label>
+            <textarea rows="4" placeholder="Tell us how we can help..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!--faq-->
+<section class="faq-section">
+  <div class="faq-container">
+    <!-- Left Side -->
+    <div class="faq-left">
+      <span class="faq-label">FAQ’s</span>
+      <h2>Frequently asked<br>questions</h2>
+      <p class="faq-note">
+        Still have questions? Contact our team for more details!<br>
+        <a href="mailto:contact@accurubber.com">contact@accurubber.com</a>
+      </p>
+    </div>
+
+    <!-- Right Side -->
+    <div class="faq-card">
+      <div class="faq-box">
+        <details open>
+          <summary>What types of rubber materials do you offer?</summary>
+          <div class="faq-answer">
+            We provide Silicone, Buna-N, Viton, Neoprene, EPDM, Teflon, and more. Custom materials are also available based on your needs.
+          </div>
+        </details>
+        <details>
+          <summary>Do you offer custom O-rings and gaskets?</summary>
+          <div class="faq-answer">
+            Yes, we manufacture O-rings and gaskets tailored to your needs.
+          </div>
+        </details>
+        <details>
+          <summary>What is the minimum order quantity (MOQ)?</summary>
+          <div class="faq-answer">
+            MOQs depend on the product type and customization level. Please contact us.
+          </div>
+        </details>
+        <details>
+          <summary>How long does it take to manufacture custom rubber parts?</summary>
+          <div class="faq-answer">
+            Lead times depend on design and volume. Contact our team for a quote.
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--10th section-->
+<section class="get-started">
+  <div class="content">
+    <div class="left">
+      <h5>GET A QUOTE TODAY!</h5>
+      <h2>Let’s Get Started!</h2>
+      <p>Get a fast, personalized quote for your rubber product needs. Fill in your email, and we’ll get back to you shortly.</p>
+      <div class="email-box">
+        <img src="img2/mail-fill.png" alt="Email"> 
+        
+
+        <input type="email" placeholder="Enter Your Email" />
+         <div class="submit-btn-wrap">
+  <button class="submit-btn"><span>Submit</span></button>
+</div>
+      </div>
+     
+
+    </div>
+    <div class="right">
+      <img src="img2/-a-worker-in-a-white-protective-suit-and-gloves-op-Photoroom 1.png"  alt="Technician Image" />
+    </div>
+  </div>
+</section>
+<!--11-->
+
+
+<footer class="site-footer">
+  <div class="footer-header">
+    <div class="footer-header-left">
+      <img src="img2/d2b5acc76e5aa1711949cabe6d01ba84b4c8b32a.png" alt="Accurubber Logo" class="footer-logo">
+      <p class="footer-tagline">Leading the Way in Solar Innovation</p>
+    </div>
+   <div class="footer-social">
+  <div class="social-icon">
+    <img src="img2/wrap (3).png" class="icon-default" alt="Facebook">
+    <img src="img2/wrap (7).png" class="icon-hover" alt="Facebook Hover">
+  </div>
+  <div class="social-icon">
+    <img src="img2/wrap (4).png" class="icon-default" alt="WhatsApp">
+    <img src="img2/wrap (8).png" class="icon-hover" alt="WhatsApp Hover">
+  </div>
+  <div class="social-icon">
+    <img src="img2/wrap (5).png" class="icon-default" alt="Instagram">
+    <img src="img2/wrap (9).png" class="icon-hover" alt="Instagram Hover">
+  </div>
+  <div class="social-icon">
+    <img src="img2/wrap (6).png" class="icon-default" alt="Twitter">
+    <img src="img2/wrap (10).png" class="icon-hover" alt="Twitter Hover">
+  </div>
+</div>
+
+  </div>
+
+  <div class="footer-main">
+    <div class="footer-links">
+      <div>
+        <h4>Quick Link</h4>
+        <ul>
+          <li>Home</li>
+          <li>Services</li>
+          <li>Products</li>
+          <li>Industries Served</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li>About Us</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li>Technical Docs</li>
+          <li>Blog</li>
+          <li>FAQ's</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-contact">
+      <ul>
+        <li><img src="img2/phone-fill.svg" alt="Phone"> (704) 555-0127</li>
+        <li><img src="img2/mail-fill.png" alt="Email"> hello@helio.com</li>
+        <li><img src="img2/map-pin-2-fill.png" alt="Address"> 2118 Thornridge Cir, Syracuse, CT 35624</li>
+        <li><img src="img2/time-fill.png" alt="Hours"> Monday - Saturday<br>9AM - 10PM</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2025 Helios. All Rights Reserved.</span>
+    <div class="footer-policy-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Services</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
