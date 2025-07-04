@@ -450,164 +450,238 @@ form .row {
 .faq-box details:last-child {
   border-bottom: none;
 }
+@media (max-width: 600px) {
+  .faq-section {
+    padding: 40px 16px;
+  }
+
+  .faq-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .faq-left {
+    max-width: 100%;
+  }
+
+  .faq-left h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .faq-label,
+  .faq-note {
+    font-size: 13px;
+  }
+
+  .faq-card {
+    padding: 20px;
+  }
+
+  .faq-box summary {
+    font-size: 15px;
+    padding: 16px 24px 16px 30px;
+  }
+
+  .faq-box details:not(:first-of-type) summary {
+    padding: 16px 24px 16px 30px;
+  }
+
+  .faq-box summary::after {
+    right: 24px;
+    top: 18px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .faq-answer {
+    margin: 0 24px 16px 30px;
+    font-size: 13px;
+  }
+}
+
 
 /*10*/
-.get-started {
-background-color: rgba(251, 251, 251, 1);
 
-  padding: 50px 20px;
-}
-.get-started .content {
-  max-width: 1150px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-background-color: rgba(255, 255, 255, 1);
-padding-left: 16px;
+    .get-started {
+      background-color: #fbfbfb;
+      padding: 50px 20px;
+    }
 
-}
-.get-started .left {
-  flex: 1;
-}
-.get-started .right img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-.get-started h5 {
+    .get-started .content {
+      max-width: 1150px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #ffffff;
+      padding-left: 16px;
+      flex-wrap: wrap;
+    }
 
-  margin-bottom: 10px;
-  font-family: 'Lato','Araial',sans-serif;
-font-weight: 600;
-font-size: 18px;
-line-height: 100%;
-letter-spacing: 0.4%;
-text-transform: uppercase;
-color: rgba(37, 53, 81, 1);
+    .get-started .left {
+      flex: 1;
+      min-width: 300px;
+    }
 
-}
-.get-started h2 {
-  
-  margin-bottom: 15px;
-font-family: 'Montserrat','Arail',sans-serif;
-font-weight: 700;
-font-size: 48px;
-line-height: 100%;
-letter-spacing: 0.1%;
-color: rgba(11, 70, 142, 1);
+    .get-started h5 {
+      margin-bottom: 10px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #253551;
+    }
 
-}
-.get-started p{
-font-family: 'Lato','Arial',sans-serif;
-font-weight: 400;
-font-size: 18px;
-line-height: 28px;
-letter-spacing: 0.2%;
-width: 556px;
-height: 56px;
-color: rgba(30, 58, 95, 1);
+    .get-started h2 {
+      margin-bottom: 15px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 48px;
+      color: #0B468E;
+    }
 
-}
-.get-started .email-box {
-  margin-top: 20px;
-  display: flex;
-  gap: 10px;
-  width: 384px;
-  height: 48px;
-  padding-top: 8px;
-  padding-right: 6px;
-  padding-bottom: 8px;
-  padding-left: 6px;
-  border-radius: 8px;
-  border-width: 1px;
-  background-color: rgba(255, 255, 255, 1);
-  position: relative; /* Added for icon positioning */
-  
-}
+    .get-started p {
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      line-height: 28px;
+      width: 100%;
+      max-width: 556px;
+      color: #1e3a5f;
+    }
 
-.get-started input[type="email"] {
-  padding: 10px 15px;
-  width: 250px;
- 
-  border: 1px solid rgba(0, 0, 0, 0.06);
+    .get-started .email-box {
+      position: relative;
+      width: 100%;
+      max-width: 384px;
+      height: 48px;
+      margin-top: 20px;
+    }
 
-  box-shadow: 0px 2px 1.5px 0.5px rgba(149, 160, 178, 0.16);
+    .get-started input[type="email"] {
+      width: 100%;
+      height: 100%;
+      padding-left: 42px;
+      padding-right: 12px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: 10px;
+      box-shadow: 0px 2px 1.5px 0.5px rgba(149, 160, 178, 0.16);
+      font-size: 16px;
+      font-family: 'Lato', sans-serif;
+    }
 
-  padding-left: 40px; /* space for icon */
-  border-radius: 10px;
-}
+    .get-started .email-box > img {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      pointer-events: none;
+    }
 
-.get-started .email-box > img {
-  position: absolute;
-  left: 18px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
-  pointer-events: none;
+    .submit-btn-wrap {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 15px;
+    }
 
-}
+    .submit-btn {
+      background: #f9b233;
+      color: white;
+      padding: 10px 20px;
+      border: 1px solid;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      font-family: 'Inter', sans-serif;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 100%);
+      box-shadow:
+        0px 2px 4px rgba(11, 70, 142, 0.1),
+        0px 7px 7px rgba(11, 70, 142, 0.09),
+        0px 15px 9px rgba(11, 70, 142, 0.05),
+        0px 27px 11px rgba(11, 70, 142, 0.01),
+        0px 43px 12px rgba(11, 70, 142, 0);
+    }
 
-.submit-btn-wrap {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-}
+    .submit-btn::before {
+      content: '';
+      position: absolute;
+      bottom: -75px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10px;
+      height: 10px;
+      background-color: #0B468E;
+      border-radius: 50%;
+      z-index: 0;
+      transition: width 0.5s ease, height 0.5s ease, bottom 0.5s ease;
+    }
 
-.submit-btn {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #f9b233;
-  color: white;
-  padding: 10px 20px;
-  border: 1px solid;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  font-family: 'Inter', sans-serif;
-  overflow: hidden;
-  z-index: 1;
-  text-align: center;
+    .submit-btn:hover::before {
+      width: 200px;
+      height: 200px;
+      bottom: -30px;
+    }
 
-  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 100%);
-  
-  box-shadow:
-    0px 2px 4px rgba(11, 70, 142, 0.1),
-    0px 7px 7px rgba(11, 70, 142, 0.09),
-    0px 15px 9px rgba(11, 70, 142, 0.05),
-    0px 27px 11px rgba(11, 70, 142, 0.01),
-    0px 43px 12px rgba(11, 70, 142, 0);
-}
+    .submit-btn span {
+      position: relative;
+      z-index: 2;
+    }
 
-/* Hover background fill */
-.submit-btn::before {
-  content: '';
-  position: absolute;
-  bottom: -75px; /* Start from below the button */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 10px;
-  height: 10px;
-  background-color: #0B468E; /* Circle background color */
-  border-radius: 50%;
-  z-index: 0;
-  transition: width 0.5s ease-in-out, height 0.5s ease-in-out, bottom 0.5s ease-in-out;
-}
+    .get-started .right img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
 
-.submit-btn:hover::before {
-  width: 200px;
-  height: 200px;
-  up: -30px; /* Move up to cover the button */
-}
+  /* === Responsive Mobile Query === */
+@media (max-width: 768px) {
+  .get-started .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
 
+  .get-started h2 {
+    font-size: 32px;
+  }
 
-/* Keep text above the hover background */
-.submit-btn span {
-  position: relative;
-  z-index: 2;
-  color: white;
+  .get-started p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .get-started .email-box {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto 0;
+  }
+
+  .get-started input[type="email"] {
+    font-size: 15px;
+    padding-left: 42px;
+  }
+
+  .get-started .email-box > img {
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .submit-btn-wrap {
+    justify-content: center;
+  }
+
+  .get-started .right img {
+    margin-top: 60px; /* ⬅️ Increased from 20px to 60px */
+    max-width: 90%;
+  }
 }
 
 /*11*/
@@ -762,8 +836,54 @@ color: rgba(30, 58, 95, 1);
 .footer-policy-links a:hover {
   text-decoration: underline;
 }
+@media (max-width: 600px) {
+  .footer-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: left;
+  }
 
+  .footer-header-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  .footer-social {
+    justify-content: flex-start;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-links h4 {
+    font-size: 16px;
+  }
+
+  .footer-links li,
+  .footer-contact li {
+    font-size: 15px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    text-align: left;
+  }
+
+  .footer-policy-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
   </style>
 </head>
 <body>
